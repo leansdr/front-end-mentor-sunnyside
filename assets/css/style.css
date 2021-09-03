@@ -312,8 +312,7 @@ body {
 }
 
 .attribution {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: #000;
   padding: 40px;
   color: #fff;
