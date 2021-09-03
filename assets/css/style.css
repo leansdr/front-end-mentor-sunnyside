@@ -66,12 +66,12 @@ body {
   color: #FFF;
   letter-spacing: 10px;
   margin-top: 50px;
-  margin-bottom: 130px;
+  margin-bottom: 80px;
 }
 
 .arrow-area {
   margin: auto;
-  height: 40px;
+  height: 20px;
 }
 
 .banner-title .arrow {
@@ -163,7 +163,7 @@ body {
 .area3--img2 {
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -171,7 +171,7 @@ body {
 
 .area3--title1,
 .area3--title2 {
-  width: 50%;
+  width: 60%;
   margin-bottom: 100px;
 }
 
@@ -214,14 +214,14 @@ body {
 .testimonials {
   display: flex;
   flex-direction: column;
-  margin:60px;
+  margin:30px;
+  padding: 20px;
 }
 
 .testimonials img {
   width: 178px;
   border-radius: 50%;
-  margin: auto;
-  margin-bottom: 60px;
+  margin: 30px auto;
 }
 
 .area--testimonials h3 {
@@ -242,6 +242,7 @@ body {
   color: #555;
   margin-bottom: 40px;
   line-height: 30px;
+  text-align: center;
 }
 
 .testimonials .name {
