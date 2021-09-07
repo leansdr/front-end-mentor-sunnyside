@@ -377,7 +377,7 @@ body {
   }
 }
 
-@media(min-width:0px) and (max-width:425px) {
+@media(min-width:0px) and (max-width:650px) {
 
   .mobile-menu {
     display: block;
