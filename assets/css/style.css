@@ -379,10 +379,13 @@ body {
 
 @media(min-width:0px) and (max-width:425px) {
 
+  main {
+    width: 100%;
+  }
+
   .mobile-menu {
     display: block;
     margin: 30px;
-    font-size: 30px;
   }
 
   .banner-title h1 {
