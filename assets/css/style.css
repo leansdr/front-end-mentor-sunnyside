@@ -14,8 +14,12 @@ body {
 #banner {
   background-image: url('../images/image-header.jpg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .menu {
@@ -107,7 +111,7 @@ body {
 .area2--title {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 120px;
   flex-direction: column;
 }
@@ -163,16 +167,20 @@ body {
 .area3--img2 {
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height:100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.area3--title1,
+.area3--title1 {
+  width: 80%;
+  padding-bottom: 50px;
+}
+
 .area3--title2 {
   width: 60%;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .area3--title1 h3,
@@ -325,3 +333,109 @@ body {
   color: #555
 }
 
+@media(min-width:650px) and (max-width:930px) {
+
+  .area1--title,
+  .area2--title {
+    padding: 50px;
+  }
+
+  .area3--title1,
+  .area3--title2 {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .area1--title h3,
+  .area2--title h3 {
+    font-size: 30px;
+  }
+
+  .area1--title p,
+  .area2--title p {
+    font-size: 18px;
+  }
+
+  .area3--img1,
+  .area3--img2 {
+    height: 50vh;
+  }
+
+  .area--testimonials {
+    padding: 100px;
+  }
+
+  .group-testimonials {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .testimonials {
+    margin:0px;
+    padding: 0px;
+  }
+}
+
+@media(min-width:0px) and (max-width:425px) {
+
+  .mobile-menu {
+    display: block;
+    margin: 30px;
+  }
+
+  .banner-title h1 {
+    font-size: 30px;
+  }
+
+    .menu-links {
+      display: none;
+    }
+
+    .area1,
+    .area2,
+    .area3 {
+      grid-template-columns: 1fr;
+    }
+
+    .area1--title,
+    .area2--title {
+      text-align: center;
+      padding: 60px 30px;
+    }
+
+    .area1--title h3 {
+      font-size: 30px;
+    }
+
+    .area2--title h3 {
+      font-size: 30px;
+    }
+
+    .area1--img {
+      grid-row: 1 /2;
+    }
+
+    .area2--img {
+      grid-row: 1 / 2;
+    }
+   
+   .area3--title1 {
+     margin-bottom: 100px;
+}
+
+.area--testimonials {
+   padding: 0px;
+}
+
+.group-testimonials {
+  flex-direction: column;
+  width: 100%;
+}
+
+.area--testimonials h3 {
+  margin-top: 50px;
+}
+
+
+}
